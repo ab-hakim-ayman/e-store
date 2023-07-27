@@ -72,7 +72,7 @@ class Product(models.Model):
         return self.title
 
 
-class View(models.Model):
+class Visit(models.Model):
     product = models.OneToOneField(Product, on_delete=models.CASCADE)
     view = models.PositiveIntegerField(default=0)
 
